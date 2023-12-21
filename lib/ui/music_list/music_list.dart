@@ -43,10 +43,12 @@ class _MusicListPageState extends State<MusicListPage> {
                 currentMusic = index;
                 ListMusic data = valMus.listMusic[index];
                 print("coba${data.author}");
+                if (!isOpened)
                 return GestureDetector(
                   onTap: () {
                     setState(() {
                       currentMusic = index;
+                      isOpened = !isOpened;
                     });
                     NavUtils.goTo(
                         context,

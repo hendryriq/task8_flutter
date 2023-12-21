@@ -50,13 +50,13 @@ class _PlayerPageState extends State<PlayerPage> {
       appBar: AppBar(
         leading: IconButton(
           onPressed:
-          // widget.onTap,
-          () {
-            Navigator.pop(context);
-          },
+          widget.onTap,
+          // () {
+          //   Navigator.pop(context);
+          // },
           icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
         ),
-        backgroundColor: Colors.blue,
+        backgroundColor: Color(0xFF845EC2),
         title: Text(
           "Audio Player",
           style: TextStyle(
@@ -67,7 +67,7 @@ class _PlayerPageState extends State<PlayerPage> {
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         padding: EdgeInsets.all(20),
-        color: Colors.blue,
+        color: Color(0xFF845EC2),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
